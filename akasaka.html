@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>akasaka</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- faのlink -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--  jQueryの読み込み   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="topginza-wrapper">
+        <div class="container">
+          <div class="topginza-parent">
+            <h1>店名　赤坂店</h1>
+            <div class="topakasaka-left">
+              <div class="chef-akasaka">
+                <img src="15.chef-156108_1280pixabay.png" >
+                <div class="chef-akname">
+                  <h3>料理長</h3>
+                  <h3>三番　八三郎</h3>
+                </div>
+              </div>
+            </div>
+            <div class="topginza-right">
+              <img src="18.sushi-2536523_1280pixabay.jpg" >
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="explain-wrapper">
+        <div class="container">
+
+
+        </div>
+      </div>
+
+      <div class="detailginza-wrapper">
+        <div class="container">
+          <div class="ginza-heading">
+            <h2>赤坂店情報</h2>
+          </div>
+          <div class="ginza-detail">
+            <p>所在地：港区赤坂1丁目＠＠＠ビル６F</p>
+            <p>Tel：03-@@@@-@@@@</p>
+            <p>営業時間：全店共通</p>
+            <p>平日：昼の部11:30～14:30(LO 14:00)、夜の部17:00～22:00(LO 21:30)</p>
+            <p>土曜日：昼の部11:30～14:30(LO 14:00)、夜の部17:00～21:00(LO 20:30)</p>
+            <p>定休日：日曜日、祝祭日</p>
+            <p>カード：VISA,MASTER,UC,AMEX,PAYPAY.LINEPAY,@@@,@@@@</p>
+            <p>座席数：100席</p>
+          </div>
+          <div class="company-map">
+            <h2>アクセス</h2>
+            <img src="japan-112722_1280pixabay.jpg" >
+          </div>
+
+        </div>
+      </div>
+
+      <div class="message-wrapper">
+        <div class="container">
+
+          <div class="reservation">
+            <h2>ご予約はこちらから</h2>
+            <p>お名前、ご連絡先などをご予約フォーマットにご記入ください。</p>
+
+          </div>
+          <div class="order-btn">
+        <!-- 以下の<div>タグに「order-show」というidをつけてください -->
+            <div id="order-show" class="order">ご予約</div>
+          </div>
+          <div class="contact-email">
+            <p>ご不明な点は、email-adress :＊＊＊＊.＊＊＊@gmail.com　へご質問ください。</p>
+          </div>
+          <!-- ここにrelax photoを挿入する -->
+          <div class="return-home">
+            <p>ホームページに戻る</p>
+            <a href="index.html">ホームページへ</a>
+          </div>
+        <!-- container -->
+        </div>
+      <!-- message-wrapper -->
+      </div>
+    <!-- main -->
+    </div>
+    <!-- 「login-modal」というidを追加してください -->
+    <div id="order-modal" class="order-modal-wrapper">
+      <!-- オーダーのモーダル部分のHTMLを貼り付けてください -->
+      <div class="modal">
+        <!-- モーダルの閉じるボタンのHTMLを貼り付けてください -->
+        <!-- "close-modal"というclassをつけてください -->
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+
+
+        <div id="order-form">
+          <h2>ご予約内容</h2>
+          <form action="#">
+            <input class="form-control" type="guest-name" placeholder="ご予約者名">
+            <input class="form-control" type="mail-adress" placeholder="メールアドレス">
+            <input class="form-control" type="phone-number" placeholder="ご予約者携帯電話番号">
+            <input class="form-control" type="blanch" placeholder="ご予約店舗名">
+            <input class="form-control" type="start-time" placeholder="ご予約時間">
+            <input class="form-control" type="guest-number" placeholder="人数">
+            <input class="form-control" type="order-course" placeholder="ご予約コース">
+            <input class="form-control" type="order-alacarte" placeholder="アラカルト">
+            <!--<input class="form-control" type="others" placeholder="その他ご希望">-->
+            <textarea input class="form-control" type="others" placeholder="その他ご希望"></textarea>
+            <p>*メニューは当日お選び頂いても結構です。</p>
+            <div id="submit-btn">確認し送信する</div>
+          </form>
+        </div>
+      </div>
+
+    <!-- order-modal-wrapper -->
+    </div>
+
+
+    <footer>
+      <div class="container">
+
+        <!--<div class="footer-btn">-->
+          <div class="footer-left">
+            <h2>お寿司屋さん</h2>
+          </div>
+
+        <!--</div>-->
+
+        <div class="footer-bottom">
+          <h4>ご来店をお待ちしております！</h4>
+        </div>
+
+      </div>
+    </footer>
