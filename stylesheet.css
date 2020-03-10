@@ -1,0 +1,487 @@
+@charset "UTF-8";
+/*ユーチューブを参考に上記を追加した*/
+/* メディアクエリ用に一番最初に幅調整の位置業を下記した */
+*{
+  box-sizing:border-box;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,div{
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+.container{
+  /*width:1170px;*/
+  padding:0 15px;
+  margin:0 auto;
+  /*メディアクエリ用にcontainerにはwidth:100%を設定した */
+  width:100%;
+}
+.top-wrapper{
+  padding:100px 0 50px 0;
+  background-color: #dee7ec;
+  background-image: url(1.restaurant-4151610_1280pixabay.jpg);
+  background-clip:border-box;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:scroll;
+  text-align:center;
+  width:100%;
+  opacity:0.9;/*目に優しくするために設定*/
+}
+.top-wrapper h1{
+  opacity:0.8;
+  font-size:45px;
+  letter-spacing: 5px;
+  color: white;
+}
+.top-wrapper h2{
+  opacity:0.8;
+  font-size:41px;
+  letter-spacing: 4px;
+  color: red;
+}
+.top-wrapper h3{
+  opacity:0.8;
+  /*font-size:30px;*/
+  letter-spacing: 2px;
+  color: white;
+}
+.top-wrapper p{
+  opacity:0.8;
+  letter-spacing: 1px;
+  color: red;
+  font-weight: bold;
+}
+.explain-wrapper{
+  background-color: #dee7ec;
+}
+/*見易くするために書式設定*/
+.explain-wrapper p{
+  padding-left: 60px;
+  font-weight: bold;
+}
+.apeal-point{
+  width:50%;
+  float:left;
+  padding: 20px 0;
+}
+.apeal-point p{
+  font-size:20px;
+  line-height:46px;
+  display:inline-block;
+  width:80%;
+  padding-left: 40px ;
+}
+.fishes-photos{
+  width:50%;
+  float:right;
+  height:500px;  /*大きさ調整で設定した*/
+}
+/*　←　下の.fishes-photosのimg全て設定がないが、戻した　*/
+.fishes-photos img{
+  width: 100%;
+  opacity: 0.9;
+}
+.clear{
+  clear:left;
+}
+.part img{
+  width:95%;
+  height:250px;
+  opacity: 0.9;   /*　←　設定がない　*/
+}
+.part{
+  float:left;
+  width:33%;
+}
+
+/*.parts{
+  position:relative;
+}
+.part tuna{
+  position: absolute;
+  top:10px;
+  left:50px;
+}
+.part bream{
+  position: absolute;
+  top:10px;
+  left:200px;
+}
+.part crab{
+  position: absolute;
+  top:10px;
+  left:400px;
+}*/
+.part-icon{
+  position:relative;
+}
+.part-icon h1{
+  position:absolute;
+  top:10px;
+  left:50px;
+  width:100%;
+  color:black;
+}
+.part p{
+  font-weight: normal;
+  width:100%;
+  margin:5px 0;
+  padding-left: 0;
+/*  color:#b3aeb5;*/
+}
+/*解体ショーの設定；.show img と　.tuna-apeal */
+.show img{
+  width:80%;
+  display:block;
+  margin:0 auto;
+  opacity: 0.9;
+}
+.tuna-apeal{
+  padding-top: 20px;
+}
+
+.detail-wrapper{
+  background-color: #dee7ec;
+  padding-top:30px;
+}
+.course img{
+  width:100%;
+  height:250px;
+  opacity: 0.9;　/*　←　無い*/
+}
+.course{
+  float:left;
+  width:33%;
+}
+.course-icon{
+  position:relative;
+}
+.course-icon h3{
+  position:absolute;
+  top:10px;
+  left:50px;
+  width:100%;
+  color:black;
+}
+/* .alacarte がないので追加　*/
+.alacarte p{
+  padding-left: 30px;
+}
+.shops{
+  padding-top:30px;
+}
+.shops-header{
+  line-height:50px;
+}
+/* .shops h3と.shops pがないから追加　*/
+.shops h3{
+  padding-left: 30px;
+}
+.shops p{
+  padding-left: 30px;
+}
+
+.time{
+  padding-top: 10px;
+}
+.message-wrapper{
+  background-color: #dee7ec;
+  padding-top:30px;
+  padding-bottom:20px;
+}
+.message-heading{
+  line-height:50px;
+}
+
+.reservation{
+  padding-left: 50px;
+}
+.reservation p{
+  line-height:50px;
+}
+.contact-email{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.order-btn {
+  /*float: right;*/
+  width:200px;
+  margin-left:60px;
+  text-align:center;
+  background-color: #239b76;
+  opacity:0.8;
+  transition: all 0.5s;
+}
+
+.order-btn:hover {
+  opacity:1;
+}
+
+.order-btn .order{
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*モーダル*/
+/* ここにモーダル部分のCSSを貼り付け */
+.order-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加 */
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 600px;
+  height: auto;
+  text-align: center;
+}
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#order-form {
+  width: 100%;
+}
+
+#order-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#order-form input {
+  width: 500px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#order-form textarea {
+  width: 500px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 10px 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 8px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+header{
+  background-color: #2f5167;
+  width:100%;
+  position:fixed;
+  top:0px;
+  opacity:0.7;
+  z-index:10;
+  color:white;
+}
+header h2{
+  color:white;
+  padding :10px 5px 10px 150px;
+}
+
+/*下記を追加*/
+
+header a{
+  font-weight: bold;
+  color:white;
+}
+
+
+
+.header-left{
+  float:left;
+}
+.header-right{
+  float:right;
+}
+header li{
+  display:inline-block;
+  padding:0 20px;
+}
+
+footer{
+  background-color: #2f5167;
+  color:white;
+}
+footer h2{
+  color:white;
+  padding :10px 5px;
+}
+
+footer a{
+  font-weight: bold;
+  color:white;
+}
+
+
+.footer-left{
+  float:left;
+}
+.footer-right{
+  float:right;
+}
+footer li{
+  display:inline-block;
+  padding:0 20px;
+}
+.footer-bottom{
+  padding-top: 60px;
+  width:100%;
+  /*width:1117px;*/
+  text-align:center;
+}
+.relax-photos img{
+  width:30%;
+  padding: 20px 120px;
+}
+
+/*メインに対し銀座店特有*/
+
+.topginza-wrapper {
+  width:100%;
+  background-color: #dee7ec;
+  height:500px;
+}
+.topginza-parent {
+  position:absolute;
+  top:20px;
+  left:50px;
+}
+.topginza-left {
+  position:relative;
+}
+
+/*各店詳細のみの定義*/
+
+.chef{
+  position:absolute;
+  top:80px;
+  left:50px;
+}
+.chef img{
+  width:250px;
+}
+.chef-name{
+  position: absolute;
+  top:300px;
+  left:80px;
+}
+/* 赤坂店は料理長のみ表示を修正 */
+.topakasaka-left{
+  position:relative;
+}
+.chef-akasaka{
+  position: absolute;
+  top:100px;
+  left:100px;
+}
+.chef-akasaka img{
+  height:250px;
+  width:200px;
+}
+.chef-akname{
+  position: absolute;
+  top:280px;
+  left:40px;
+}
+
+
+/*メインに対し銀座店特有*/
+
+.topginza-right {
+  position:relative;
+  top:0;
+  left:400px;
+  /*  display:inline-block;*/
+}
+.topginza-right img{
+  width:55%;
+  /*  margin-left:200px;*/
+}
+/* 六本木店のイメージ図の位置を同じにして、大きさを変える */
+.toproppongi-right{
+  position:relative;
+  top:0;
+  left:400px;
+}
+.toproppongi-right img{
+  width:55%;
+  height:450px;
+}
+
+/*メインに対し銀座店特有*/
+
+.detailginza-wrapper {
+  width:100%;
+  background-color: #dee7ec;
+}
+.ginza-heading{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.ginza-detail{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+/*各店詳細のみの定義*/
+
+.company-map{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.company-map img{
+  width:50%;
+  margin-left:200px;
+}
+.return-home{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+/*各店詳細のみの定義*/
+/*
+.footerginza-bottom{
+  padding-top: 30px;
+  width:1117px;
+  text-align:center;
+}
+*/
