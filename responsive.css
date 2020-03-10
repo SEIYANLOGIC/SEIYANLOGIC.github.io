@@ -1,0 +1,129 @@
+@media(max-width:1000px){
+  .top-wrapper h1{
+    font-size: 32px;
+  }
+  .top-wrapper h2{
+    font-size: 28px;
+  }
+  .top-wrapper h3{
+    font-size: 20px;
+  }
+  .explain-wrapper h1{
+    font-size:32px;
+    color:red;
+  }
+  .explain-wrapper h2{
+    font-size: 28px;
+  }
+  .explainwrapper h3{
+    font-size: 20px;
+  }
+  .explain-wrapper p{
+    font-size: 20px;
+  }
+  .apeal-point{
+    padding: 10px 0;
+    width:40%;
+  }
+  .apeal-point p{
+    font-size: 20px;
+    line-height:30px;
+    width:100%;
+  }
+  .fishes-photos{
+    width:60%;
+    float:right;
+    /*height:500px;  大きさ調整で設定した*/
+  }
+  .part p{
+    font-size: 13px;
+  }
+  .relax-photos img{
+    width:40%;
+    padding: 10px 50px;
+  }
+
+}
+@media(max-width:670px){
+  .top-wrapper h1{
+    font-size: 24px;
+    color:green;
+  }
+  .top-wrapper h2{
+    font-size: 20px;
+  }
+  .top-wrapper h3{
+    font-size: 20px;
+  }
+  .explain-wrapper h1{
+    font-size:24px;
+    color:green;
+  }
+  .explain-wrapper h2{
+    font-size: 20px;
+  }
+  .explain-wrapper h3{
+    font-size: 20px;
+  }
+  .apeal-point{
+    width:100%;
+  }
+  .fishes-photos{
+    width:100%;
+    height:300px;  /*大きさ調整で設定した*/
+    margin-bottom: 30px;
+  }
+
+  .part img{
+    width:80%;
+    height:150px;
+    opacity: 0.9;   /*　←　設定がない　*/
+  }
+  .part{
+    float:left;
+    width:100%;
+  }
+  .part p{
+    margin:1px 0;
+    font-size: 14px;
+  }
+  .tuna-apeal{
+    padding-top: 5px;
+  }
+  .detail-wrapper h1{
+    font-size:24px;
+    color:green;
+  }
+  .detail-wrapper h2{
+    font-size: 20px;
+  }
+  .detali-wrapper h3{
+    font-size: 20px;
+  }
+  .detail-wrapper p{
+    font-size: 15px;
+    width:90%;
+  }
+  .shops-header{
+    line-height:30px;
+  }
+  .message-heading{
+    line-height:30px;
+  }
+  .message-wrapper h1{
+    font-size:24px;
+    color:green;
+  }
+  .message-wrapper h2{
+    font-size: 20px;
+  }
+  .reservation p{
+    line-height:30px;
+  }
+  .relax-photos img{
+    width:80%;
+    padding: 5px 30px;
+  }
+}
+/* 追加が必須な項目を追加対応した。参照できる資料を作っていないので延期する3/3 */
+/* 3/10 作業再開　*/
